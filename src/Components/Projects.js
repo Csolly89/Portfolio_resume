@@ -12,7 +12,7 @@ export default function Projects({ projects }) {
                 <Card.Body>
                     <Card.Title>My Projects</Card.Title>
                     <Card.Text>
-                        Check out some of the coding Projects I've done while in bootcamp!
+                        Check out some of the coding Projects I've done while I've been in bootcamp!
                     </Card.Text>
                 </Card.Body>
                 <ListGroup>
