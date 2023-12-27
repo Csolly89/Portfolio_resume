@@ -2,11 +2,13 @@ import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import ListGroup from 'react-bootstrap/ListGroup'
 
+import './Projects.css'
 
 export default function Projects({ projects }) {
-    const displayProjects = projects.map((eachProject) => <ListGroup.Item>{eachProject}</ListGroup.Item>)
+    const displayProjects = projects?.map((eachProject) => <ListGroup.Item>{eachProject}</ListGroup.Item>)
 
     return (
+        <div className='Projects'>
         <Container>
             <Card>
                 <Card.Body>
@@ -20,6 +22,7 @@ export default function Projects({ projects }) {
                 </ListGroup>
             </Card>
         </Container>
+        </div>
     )
 }
 

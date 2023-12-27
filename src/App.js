@@ -1,14 +1,7 @@
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
-// import Nav from 'react-bootstrap/Nav';
-
-// import About from './Components/About';
-// import Home from './Components/Home';
-// import Projects from './Components/Projects';
-// import Skills from './Components/Skills'
-
 import NavBar from './Components/Navbar';
+import { Home, About, Projects, Skills, Contact } from './Components/Barrel'
 import './App.css'
+
 
 function App() {
 
@@ -16,8 +9,12 @@ function App() {
 
   return (
     <div className="App">
-      
       <NavBar />
+      <Home />
+      <About />
+      <Projects projects={projects} />
+      <Skills />
+      <Contact />
     </div>
   )
 }
